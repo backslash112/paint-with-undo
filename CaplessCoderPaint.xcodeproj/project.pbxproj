@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3327E0D1A00E70C00658E60 /* undo.png in Resources */ = {isa = PBXBuildFile; fileRef = C3327E0C1A00E70C00658E60 /* undo.png */; };
+		C3CF793F1A009723009E47DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF793E1A009723009E47DA /* Foundation.framework */; };
+		C3CF79411A009723009E47DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF79401A009723009E47DA /* CoreGraphics.framework */; };
+		C3CF79431A009723009E47DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF79421A009723009E47DA /* UIKit.framework */; };
+		C3CF79491A009723009E47DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3CF79471A009723009E47DA /* InfoPlist.strings */; };
+		C3CF794B1A009723009E47DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF794A1A009723009E47DA /* main.m */; };
+		C3CF794F1A009723009E47DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF794E1A009723009E47DA /* AppDelegate.m */; };
+		C3CF79511A009723009E47DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CF79501A009723009E47DA /* Images.xcassets */; };
+		C3CF79581A009723009E47DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF79571A009723009E47DA /* XCTest.framework */; };
+		C3CF79591A009723009E47DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF793E1A009723009E47DA /* Foundation.framework */; };
+		C3CF795A1A009723009E47DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF79421A009723009E47DA /* UIKit.framework */; };
+		C3CF79621A009723009E47DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3CF79601A009723009E47DA /* InfoPlist.strings */; };
+		C3CF79641A009723009E47DA /* CaplessCoderPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF79631A009723009E47DA /* CaplessCoderPaintTests.m */; };
+		C3CF796E1A00978E009E47DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF796D1A00978E009E47DA /* QuartzCore.framework */; };
+		C3CF79711A0097A5009E47DA /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF79701A0097A5009E47DA /* Line.m */; };
+		C3CF79741A009856009E47DA /* ColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF79731A009856009E47DA /* ColorPicker.m */; };
+		C3CF79771A009926009E47DA /* TouchDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF79761A009926009E47DA /* TouchDrawView.m */; };
+		C3CF79791A00BADB009E47DA /* TouchDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CF79781A00BADB009E47DA /* TouchDrawViewController.xib */; };
+		C3CF797C1A00C039009E47DA /* TouchDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF797B1A00C039009E47DA /* TouchDrawViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3CF795B1A009723009E47DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3CF79331A009723009E47DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3CF793A1A009723009E47DA;
+			remoteInfo = CaplessCoderPaint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3327E0C1A00E70C00658E60 /* undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undo.png; sourceTree = "<group>"; };
+		C3CF793B1A009723009E47DA /* CaplessCoderPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaplessCoderPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CF793E1A009723009E47DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3CF79401A009723009E47DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C3CF79421A009723009E47DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C3CF79461A009723009E47DA /* CaplessCoderPaint-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CaplessCoderPaint-Info.plist"; sourceTree = "<group>"; };
+		C3CF79481A009723009E47DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3CF794A1A009723009E47DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3CF794C1A009723009E47DA /* CaplessCoderPaint-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CaplessCoderPaint-Prefix.pch"; sourceTree = "<group>"; };
+		C3CF794D1A009723009E47DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3CF794E1A009723009E47DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3CF79501A009723009E47DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3CF79561A009723009E47DA /* CaplessCoderPaintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaplessCoderPaintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CF79571A009723009E47DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C3CF795F1A009723009E47DA /* CaplessCoderPaintTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CaplessCoderPaintTests-Info.plist"; sourceTree = "<group>"; };
+		C3CF79611A009723009E47DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3CF79631A009723009E47DA /* CaplessCoderPaintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaplessCoderPaintTests.m; sourceTree = "<group>"; };
+		C3CF796D1A00978E009E47DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C3CF796F1A0097A5009E47DA /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		C3CF79701A0097A5009E47DA /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		C3CF79721A009856009E47DA /* ColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPicker.h; sourceTree = "<group>"; };
+		C3CF79731A009856009E47DA /* ColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPicker.m; sourceTree = "<group>"; };
+		C3CF79751A009926009E47DA /* TouchDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchDrawView.h; sourceTree = "<group>"; };
+		C3CF79761A009926009E47DA /* TouchDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchDrawView.m; sourceTree = "<group>"; };
+		C3CF79781A00BADB009E47DA /* TouchDrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TouchDrawViewController.xib; path = ../TouchDrawViewController.xib; sourceTree = "<group>"; };
+		C3CF797A1A00C039009E47DA /* TouchDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchDrawViewController.h; sourceTree = "<group>"; };
+		C3CF797B1A00C039009E47DA /* TouchDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchDrawViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3CF79381A009723009E47DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CF796E1A00978E009E47DA /* QuartzCore.framework in Frameworks */,
+				C3CF79411A009723009E47DA /* CoreGraphics.framework in Frameworks */,
+				C3CF79431A009723009E47DA /* UIKit.framework in Frameworks */,
+				C3CF793F1A009723009E47DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CF79531A009723009E47DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CF79581A009723009E47DA /* XCTest.framework in Frameworks */,
+				C3CF795A1A009723009E47DA /* UIKit.framework in Frameworks */,
+				C3CF79591A009723009E47DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3327E091A00E6DD00658E60 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3327E0C1A00E70C00658E60 /* undo.png */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+		C3CF79321A009723009E47DA = {
+			isa = PBXGroup;
+			children = (
+				C3327E091A00E6DD00658E60 /* Files */,
+				C3CF79441A009723009E47DA /* CaplessCoderPaint */,
+				C3CF795D1A009723009E47DA /* CaplessCoderPaintTests */,
+				C3CF793D1A009723009E47DA /* Frameworks */,
+				C3CF793C1A009723009E47DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3CF793C1A009723009E47DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3CF793B1A009723009E47DA /* CaplessCoderPaint.app */,
+				C3CF79561A009723009E47DA /* CaplessCoderPaintTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3CF793D1A009723009E47DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3CF796D1A00978E009E47DA /* QuartzCore.framework */,
+				C3CF793E1A009723009E47DA /* Foundation.framework */,
+				C3CF79401A009723009E47DA /* CoreGraphics.framework */,
+				C3CF79421A009723009E47DA /* UIKit.framework */,
+				C3CF79571A009723009E47DA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3CF79441A009723009E47DA /* CaplessCoderPaint */ = {
+			isa = PBXGroup;
+			children = (
+				C3CF794D1A009723009E47DA /* AppDelegate.h */,
+				C3CF794E1A009723009E47DA /* AppDelegate.m */,
+				C3CF79501A009723009E47DA /* Images.xcassets */,
+				C3CF79451A009723009E47DA /* Supporting Files */,
+				C3CF796F1A0097A5009E47DA /* Line.h */,
+				C3CF79701A0097A5009E47DA /* Line.m */,
+				C3CF79721A009856009E47DA /* ColorPicker.h */,
+				C3CF79731A009856009E47DA /* ColorPicker.m */,
+				C3CF79751A009926009E47DA /* TouchDrawView.h */,
+				C3CF79761A009926009E47DA /* TouchDrawView.m */,
+				C3CF79781A00BADB009E47DA /* TouchDrawViewController.xib */,
+				C3CF797A1A00C039009E47DA /* TouchDrawViewController.h */,
+				C3CF797B1A00C039009E47DA /* TouchDrawViewController.m */,
+			);
+			path = CaplessCoderPaint;
+			sourceTree = "<group>";
+		};
+		C3CF79451A009723009E47DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3CF79461A009723009E47DA /* CaplessCoderPaint-Info.plist */,
+				C3CF79471A009723009E47DA /* InfoPlist.strings */,
+				C3CF794A1A009723009E47DA /* main.m */,
+				C3CF794C1A009723009E47DA /* CaplessCoderPaint-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3CF795D1A009723009E47DA /* CaplessCoderPaintTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3CF79631A009723009E47DA /* CaplessCoderPaintTests.m */,
+				C3CF795E1A009723009E47DA /* Supporting Files */,
+			);
+			path = CaplessCoderPaintTests;
+			sourceTree = "<group>";
+		};
+		C3CF795E1A009723009E47DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3CF795F1A009723009E47DA /* CaplessCoderPaintTests-Info.plist */,
+				C3CF79601A009723009E47DA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3CF793A1A009723009E47DA /* CaplessCoderPaint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3CF79671A009723009E47DA /* Build configuration list for PBXNativeTarget "CaplessCoderPaint" */;
+			buildPhases = (
+				C3CF79371A009723009E47DA /* Sources */,
+				C3CF79381A009723009E47DA /* Frameworks */,
+				C3CF79391A009723009E47DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaplessCoderPaint;
+			productName = CaplessCoderPaint;
+			productReference = C3CF793B1A009723009E47DA /* CaplessCoderPaint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3CF79551A009723009E47DA /* CaplessCoderPaintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3CF796A1A009723009E47DA /* Build configuration list for PBXNativeTarget "CaplessCoderPaintTests" */;
+			buildPhases = (
+				C3CF79521A009723009E47DA /* Sources */,
+				C3CF79531A009723009E47DA /* Frameworks */,
+				C3CF79541A009723009E47DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3CF795C1A009723009E47DA /* PBXTargetDependency */,
+			);
+			name = CaplessCoderPaintTests;
+			productName = CaplessCoderPaintTests;
+			productReference = C3CF79561A009723009E47DA /* CaplessCoderPaintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3CF79331A009723009E47DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = yangcun;
+				TargetAttributes = {
+					C3CF79551A009723009E47DA = {
+						TestTargetID = C3CF793A1A009723009E47DA;
+					};
+				};
+			};
+			buildConfigurationList = C3CF79361A009723009E47DA /* Build configuration list for PBXProject "CaplessCoderPaint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3CF79321A009723009E47DA;
+			productRefGroup = C3CF793C1A009723009E47DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3CF793A1A009723009E47DA /* CaplessCoderPaint */,
+				C3CF79551A009723009E47DA /* CaplessCoderPaintTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3CF79391A009723009E47DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CF79791A00BADB009E47DA /* TouchDrawViewController.xib in Resources */,
+				C3327E0D1A00E70C00658E60 /* undo.png in Resources */,
+				C3CF79491A009723009E47DA /* InfoPlist.strings in Resources */,
+				C3CF79511A009723009E47DA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CF79541A009723009E47DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CF79621A009723009E47DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3CF79371A009723009E47DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CF797C1A00C039009E47DA /* TouchDrawViewController.m in Sources */,
+				C3CF794F1A009723009E47DA /* AppDelegate.m in Sources */,
+				C3CF79741A009856009E47DA /* ColorPicker.m in Sources */,
+				C3CF79771A009926009E47DA /* TouchDrawView.m in Sources */,
+				C3CF79711A0097A5009E47DA /* Line.m in Sources */,
+				C3CF794B1A009723009E47DA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CF79521A009723009E47DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CF79641A009723009E47DA /* CaplessCoderPaintTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3CF795C1A009723009E47DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3CF793A1A009723009E47DA /* CaplessCoderPaint */;
+			targetProxy = C3CF795B1A009723009E47DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3CF79471A009723009E47DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3CF79481A009723009E47DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C3CF79601A009723009E47DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3CF79611A009723009E47DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3CF79651A009723009E47DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3CF79661A009723009E47DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3CF79681A009723009E47DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaplessCoderPaint/CaplessCoderPaint-Prefix.pch";
+				INFOPLIST_FILE = "CaplessCoderPaint/CaplessCoderPaint-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C3CF79691A009723009E47DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaplessCoderPaint/CaplessCoderPaint-Prefix.pch";
+				INFOPLIST_FILE = "CaplessCoderPaint/CaplessCoderPaint-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C3CF796B1A009723009E47DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CaplessCoderPaint.app/CaplessCoderPaint";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaplessCoderPaint/CaplessCoderPaint-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CaplessCoderPaintTests/CaplessCoderPaintTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C3CF796C1A009723009E47DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CaplessCoderPaint.app/CaplessCoderPaint";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaplessCoderPaint/CaplessCoderPaint-Prefix.pch";
+				INFOPLIST_FILE = "CaplessCoderPaintTests/CaplessCoderPaintTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3CF79361A009723009E47DA /* Build configuration list for PBXProject "CaplessCoderPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CF79651A009723009E47DA /* Debug */,
+				C3CF79661A009723009E47DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3CF79671A009723009E47DA /* Build configuration list for PBXNativeTarget "CaplessCoderPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CF79681A009723009E47DA /* Debug */,
+				C3CF79691A009723009E47DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3CF796A1A009723009E47DA /* Build configuration list for PBXNativeTarget "CaplessCoderPaintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CF796B1A009723009E47DA /* Debug */,
+				C3CF796C1A009723009E47DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3CF79331A009723009E47DA /* Project object */;
+}

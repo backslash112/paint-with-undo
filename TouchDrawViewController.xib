@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6206.8" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TouchDrawViewController">
+            <connections>
+                <outlet property="drewArea" destination="F37-ic-wQn" id="02O-qa-zPL"/>
+                <outlet property="selector1" destination="86T-xq-Lzp" id="Qsa-Q4-dIB"/>
+                <outlet property="selector2" destination="YMg-Mn-rqc" id="R0I-rf-9wp"/>
+                <outlet property="selector3" destination="baH-h5-L91" id="ze1-DB-3ci"/>
+                <outlet property="selector4" destination="yzh-L4-vA0" id="nsh-Aa-Eah"/>
+                <outlet property="selector5" destination="5S9-MU-Z4x" id="siK-J0-HAL"/>
+                <outlet property="selector6" destination="DOK-W7-hax" id="1rt-ss-an2"/>
+                <outlet property="selector7" destination="Jrt-14-Yog" id="j9j-eA-7o4"/>
+                <outlet property="selector8" destination="Cp6-vg-iPE" id="4HB-Uz-4er"/>
+                <outlet property="selector9" destination="kFu-wd-yMi" id="eRw-EG-Bw6"/>
+                <outlet property="view" destination="Pwq-Iw-9GO" id="t72-u1-dSW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" userLabel="first Responder" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Pwq-Iw-9GO">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="86T-xq-Lzp" customClass="ColorPicker">
+                    <rect key="frame" x="20" y="20" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.27283407922647851" blue="0.53699388436872719" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YMg-Mn-rqc" customClass="ColorPicker">
+                    <rect key="frame" x="172" y="20" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baH-h5-L91" customClass="ColorPicker">
+                    <rect key="frame" x="248" y="20" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzh-L4-vA0" customClass="ColorPicker">
+                    <rect key="frame" x="58" y="58" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5S9-MU-Z4x" customClass="ColorPicker">
+                    <rect key="frame" x="210" y="20" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DOK-W7-hax" customClass="ColorPicker">
+                    <rect key="frame" x="58" y="20" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.73009176559183997" blue="0.22093174425259177" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jrt-14-Yog" customClass="ColorPicker">
+                    <rect key="frame" x="20" y="58" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cp6-vg-iPE" customClass="ColorPicker">
+                    <rect key="frame" x="96" y="20" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kFu-wd-yMi" customClass="ColorPicker">
+                    <rect key="frame" x="134" y="20" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F37-ic-wQn" customClass="TouchDrawView">
+                    <rect key="frame" x="0.0" y="88" width="320" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23i-2u-B77">
+                    <rect key="frame" x="248" y="55" width="33" height="33"/>
+                    <state key="normal" backgroundImage="undo.png"/>
+                    <connections>
+                        <action selector="undo:" destination="-1" eventType="touchUpInside" id="q7X-yq-2Iy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="undo.png" width="204" height="200"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
+</document>
