@@ -71,12 +71,22 @@
                         <action selector="undo:" destination="-1" eventType="touchUpInside" id="q7X-yq-2Iy"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jwb-Aw-EhO" customClass="ColorPicker">
+                    <rect key="frame" x="210" y="58" width="30" height="30"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eraser.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Av-gZ-jEb">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
         </view>
     </objects>
     <resources>
+        <image name="eraser.png" width="30" height="30"/>
         <image name="undo.png" width="204" height="200"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

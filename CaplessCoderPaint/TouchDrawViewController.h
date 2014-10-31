@@ -27,6 +27,8 @@
 @property (unsafe_unretained, nonatomic) IBOutlet ColorPicker *selector9;
 @property (retain, nonatomic) IBOutlet TouchDrawView *drewArea;
 
+@property (unsafe_unretained, nonatomic) IBOutlet ColorPicker *selector0;
+
 - (IBAction)undo:(id)sender;
 
 @end

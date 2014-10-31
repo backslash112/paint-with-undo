@@ -24,6 +24,7 @@
 @synthesize selector8;
 @synthesize selector9;
 @synthesize drewArea;
+@synthesize selector0;
 
 
 - (id)init
@@ -49,6 +50,7 @@
     [selector7 setDelegate:self];
     [selector8 setDelegate:self];
     [selector9 setDelegate:self];
+    [selector0 setDelegate:self];
     
     NSLog(@"Loaded the view for HypnosisViewController");
 }
@@ -76,6 +78,7 @@
     selector7.layer.borderWidth = 0.0f;
     selector8.layer.borderWidth = 0.0f;
     selector9.layer.borderWidth = 0.0f;
+    selector0.layer.borderWidth = 0.0f;
 }
 
 - (IBAction)undo:(id)sender
