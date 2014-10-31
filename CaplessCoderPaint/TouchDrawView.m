@@ -7,6 +7,7 @@
 //
 
 #import "TouchDrawView.h"
+#import "Common.h"
 
 @implementation TouchDrawView
 {
@@ -73,7 +74,21 @@
 
 - (void)removeLine:(Line*)line
 {
-    [linesCompleted removeObject:line];
+    if ([linesCompleted containsObject:line])
+        [linesCompleted removeObject:line];
+}
+
+- (void)removeLineByEndPoint:(CGPoint)point
+{
+    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+        Line *evaluatedLine = (Line*)evaluatedObject;
+        return evaluatedLine.end.x == point.x &&
+        evaluatedLine.end.y == point.y;
+    }];
+    NSArray *result = [linesCompleted filteredArrayUsingPredicate:predicate];
+    if (result && result.count > 0) {
+        [linesCompleted removeObject:result[0]];
+    }
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -85,7 +100,12 @@
             [currentLine setEnd:loc];
             
             if (currentLine) {
-                [self addLine:currentLine];
+                if ([Common color:drawColor isEqualToColor:[UIColor clearColor] withTolerance:0.2]) {
+                    // eraser
+                    // [self removeLineByEndPoint:loc]; this solution can not work.
+                } else {
+                    [self addLine:currentLine];
+                }
             }
             Line *newLine = [[Line alloc] init];
             [newLine setBegin:loc];

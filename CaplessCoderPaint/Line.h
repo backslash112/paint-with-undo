@@ -12,6 +12,6 @@
 
 @property (nonatomic) CGPoint begin;
 @property (nonatomic) CGPoint end;
-@property (nonatomic,retain) UIColor *color;
+@property (nonatomic, retain) UIColor *color;
 
 @end

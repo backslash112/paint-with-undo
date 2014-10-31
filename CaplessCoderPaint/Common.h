@@ -10,7 +10,7 @@
 
 @interface Common : NSObject
 
-- (BOOL)color:(UIColor *)color1
++ (BOOL)color:(UIColor *)color1
 isEqualToColor:(UIColor *)color2
 withTolerance:(CGFloat)tolerance;
 
