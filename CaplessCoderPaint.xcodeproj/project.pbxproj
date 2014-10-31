@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C3327E0D1A00E70C00658E60 /* undo.png in Resources */ = {isa = PBXBuildFile; fileRef = C3327E0C1A00E70C00658E60 /* undo.png */; };
+		C3327E0F1A0320C300658E60 /* eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = C3327E0E1A0320C300658E60 /* eraser.png */; };
+		C3C323EE1A0332CC00D0C3FC /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C323ED1A0332CC00D0C3FC /* Common.m */; };
 		C3CF793F1A009723009E47DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF793E1A009723009E47DA /* Foundation.framework */; };
 		C3CF79411A009723009E47DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF79401A009723009E47DA /* CoreGraphics.framework */; };
 		C3CF79431A009723009E47DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF79421A009723009E47DA /* UIKit.framework */; };
@@ -40,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		C3327E0C1A00E70C00658E60 /* undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undo.png; sourceTree = "<group>"; };
+		C3327E0E1A0320C300658E60 /* eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eraser.png; sourceTree = "<group>"; };
+		C3C323EC1A0332CC00D0C3FC /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		C3C323ED1A0332CC00D0C3FC /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		C3CF793B1A009723009E47DA /* CaplessCoderPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaplessCoderPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CF793E1A009723009E47DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C3CF79401A009723009E47DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -96,6 +101,7 @@
 		C3327E091A00E6DD00658E60 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3327E0E1A0320C300658E60 /* eraser.png */,
 				C3327E0C1A00E70C00658E60 /* undo.png */,
 			);
 			name = Files;
@@ -149,6 +155,8 @@
 				C3CF79781A00BADB009E47DA /* TouchDrawViewController.xib */,
 				C3CF797A1A00C039009E47DA /* TouchDrawViewController.h */,
 				C3CF797B1A00C039009E47DA /* TouchDrawViewController.m */,
+				C3C323EC1A0332CC00D0C3FC /* Common.h */,
+				C3C323ED1A0332CC00D0C3FC /* Common.m */,
 			);
 			path = CaplessCoderPaint;
 			sourceTree = "<group>";
@@ -258,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3CF79791A00BADB009E47DA /* TouchDrawViewController.xib in Resources */,
+				C3327E0F1A0320C300658E60 /* eraser.png in Resources */,
 				C3327E0D1A00E70C00658E60 /* undo.png in Resources */,
 				C3CF79491A009723009E47DA /* InfoPlist.strings in Resources */,
 				C3CF79511A009723009E47DA /* Images.xcassets in Resources */,
@@ -285,6 +294,7 @@
 				C3CF79771A009926009E47DA /* TouchDrawView.m in Sources */,
 				C3CF79711A0097A5009E47DA /* Line.m in Sources */,
 				C3CF794B1A009723009E47DA /* main.m in Sources */,
+				C3C323EE1A0332CC00D0C3FC /* Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
