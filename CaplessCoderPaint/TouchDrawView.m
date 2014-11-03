@@ -11,6 +11,7 @@
 
 @implementation TouchDrawView
 {
+    BOOL _isEraser;
 }
 @synthesize currentLine;
 @synthesize linesCompleted;
@@ -33,9 +34,9 @@
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
+    
     CGContextSetLineWidth(context, 5.0);
     CGContextSetLineCap(context, kCGLineCapRound);
-    [drawColor set];
     for (Line *line in linesCompleted) {
         [[line color] set];
         CGContextMoveToPoint(context, [line begin].x, [line begin].y);
@@ -48,7 +49,13 @@
 {
     if ([self.undoManager canUndo]) {
         [self.undoManager undo];
-        [self setNeedsDisplay];
+    }
+}
+
+- (void)redo
+{
+    if ([self.undoManager canRedo]) {
+        [self.undoManager redo];
     }
 }
 
@@ -70,26 +77,34 @@
 {
     [[self.undoManager prepareWithInvocationTarget:self] removeLine:line];
     [linesCompleted addObject:line];
+    [self setNeedsDisplay];
 }
 
 - (void)removeLine:(Line*)line
 {
-    if ([linesCompleted containsObject:line])
+    if ([linesCompleted containsObject:line]) {
+        [[self.undoManager prepareWithInvocationTarget:self] addLine:line];
         [linesCompleted removeObject:line];
+        [self setNeedsDisplay];
+    }
 }
 
 - (void)removeLineByEndPoint:(CGPoint)point
 {
     NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
         Line *evaluatedLine = (Line*)evaluatedObject;
-        return evaluatedLine.end.x == point.x &&
-        evaluatedLine.end.y == point.y;
+//        return (evaluatedLine.end.x == point.x && evaluatedLine.end.y == point.y) ||
+//               (evaluatedLine.end.x == point.x - 1.0f && evaluatedLine.end.y == point.y - 1.0f) ||
+//               (evaluatedLine.end.x == point.x + 1.0f && evaluatedLine.end.y == point.y + 1.0f);
+        return (evaluatedLine.end.x <= point.x-1 || evaluatedLine.end.x > point.x+1) &&
+               (evaluatedLine.end.y <= point.y-1 || evaluatedLine.end.y > point.y+1);
     }];
     NSArray *result = [linesCompleted filteredArrayUsingPredicate:predicate];
     if (result && result.count > 0) {
         [linesCompleted removeObject:result[0]];
     }
 }
+
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -102,8 +117,10 @@
             if (currentLine) {
                 if ([Common color:drawColor isEqualToColor:[UIColor clearColor] withTolerance:0.2]) {
                     // eraser
-                    // [self removeLineByEndPoint:loc]; this solution can not work.
+                    // [self removeLineByEndPoint:loc]; //this solution can not work.
+                    _isEraser = YES;
                 } else {
+                    _isEraser = NO;
                     [self addLine:currentLine];
                 }
             }
@@ -113,7 +130,6 @@
             [newLine setColor:drawColor];
             currentLine = newLine;
         }
-        [self setNeedsDisplay];
     }
 }
 

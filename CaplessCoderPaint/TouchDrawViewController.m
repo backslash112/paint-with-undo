@@ -33,7 +33,7 @@
                            bundle:nil];
     isSelectedColor = NO;
     isCleared = NO;
-    
+
     return self;
 }
 
@@ -84,6 +84,10 @@
 - (IBAction)undo:(id)sender
 {
     [drewArea undo];
+}
+
+- (IBAction)redo:(id)sender {
+    [drewArea redo];
 }
 
 @end

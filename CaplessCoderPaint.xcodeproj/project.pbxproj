@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C3327E0D1A00E70C00658E60 /* undo.png in Resources */ = {isa = PBXBuildFile; fileRef = C3327E0C1A00E70C00658E60 /* undo.png */; };
 		C3327E0F1A0320C300658E60 /* eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = C3327E0E1A0320C300658E60 /* eraser.png */; };
+		C34349BF1A071AF200FD3477 /* redo.png in Resources */ = {isa = PBXBuildFile; fileRef = C34349BE1A071AF200FD3477 /* redo.png */; };
 		C3C323EE1A0332CC00D0C3FC /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C323ED1A0332CC00D0C3FC /* Common.m */; };
 		C3CF793F1A009723009E47DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF793E1A009723009E47DA /* Foundation.framework */; };
 		C3CF79411A009723009E47DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF79401A009723009E47DA /* CoreGraphics.framework */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		C3327E0C1A00E70C00658E60 /* undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undo.png; sourceTree = "<group>"; };
 		C3327E0E1A0320C300658E60 /* eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eraser.png; sourceTree = "<group>"; };
+		C34349BE1A071AF200FD3477 /* redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redo.png; sourceTree = "<group>"; };
 		C3C323EC1A0332CC00D0C3FC /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		C3C323ED1A0332CC00D0C3FC /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		C3CF793B1A009723009E47DA /* CaplessCoderPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaplessCoderPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,7 @@
 		C3327E091A00E6DD00658E60 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				C34349BE1A071AF200FD3477 /* redo.png */,
 				C3327E0E1A0320C300658E60 /* eraser.png */,
 				C3327E0C1A00E70C00658E60 /* undo.png */,
 			);
@@ -270,6 +273,7 @@
 				C3327E0D1A00E70C00658E60 /* undo.png in Resources */,
 				C3CF79491A009723009E47DA /* InfoPlist.strings in Resources */,
 				C3CF79511A009723009E47DA /* Images.xcassets in Resources */,
+				C34349BF1A071AF200FD3477 /* redo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

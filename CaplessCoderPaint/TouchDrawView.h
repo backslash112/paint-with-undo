@@ -18,5 +18,5 @@
 @property (nonatomic) UIColor *drawColor;
 
 - (void)undo;
-
+- (void)redo;
 @end

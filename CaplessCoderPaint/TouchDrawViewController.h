@@ -28,7 +28,10 @@
 @property (retain, nonatomic) IBOutlet TouchDrawView *drewArea;
 
 @property (unsafe_unretained, nonatomic) IBOutlet ColorPicker *selector0;
+@property (weak, nonatomic) IBOutlet UIButton *undoButton;
+@property (weak, nonatomic) IBOutlet UIButton *redoButton;
 
 - (IBAction)undo:(id)sender;
+- (IBAction)redo:(id)sender;
 
 @end
